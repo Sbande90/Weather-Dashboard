@@ -4,6 +4,7 @@
     margin-left: 15px;
     margin-bottom: 20px;
     margin-top: 20px;
+    max-width: 600px !important;
 }
 .list-item{
     border: 1px rgba(128, 128, 128, 0.801) solid;
@@ -25,10 +26,22 @@
     margin: 5px;
     padding: 7px;
     width: 17%;
+    min-width: 150px;
 }
 .bottom-card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+}
+#input{
+    min-width: 300px;
+    margin-bottom: 10px;
+}
+#cityId{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap !important;
 }

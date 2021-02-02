@@ -15,7 +15,7 @@
   <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
   </nav>
-  <div class="container d-flex flex-nowrap bd-highlight">
+  <div id="cityId">
     <div class="left w-20 order-1">
       <P>Search for city</P>
       <form class="d-flex">
@@ -24,29 +24,29 @@
       </form>
       <button class="btn btn-primary" type="button" id="clear-history">Clear history</button>
       <div id="list">
+        <!-- <div class="list-item">Austin</div>
         <div class="list-item">Austin</div>
         <div class="list-item">Austin</div>
-        <div class="list-item">Austin</div>
-        <div class="list-item">Austin</div>
+        <div class="list-item">Austin</div> -->
       </div>
     </div>
     <div class="rigth w-80 order-2">
       
       <div class="card top-card">
         <div class="card-body">
-        <h4 class="card-title" id="city-name"></h4>
-        <h6 class="card-subtitle mb-2 text-muted" id="temperature">Temperature:90.9 F</h6>
-        <h6 class="card-subtitle mb-2 text-muted" id="humidity">Humidity: 41</h6>
-        <h6 class="card-subtitle mb-2 text-muted" id="wind">Windspeed:4.7 MPH</h6>
-        <h6 class="card-subtitle mb-2 text-muted">UV index:</h6>
+        <h4 class="card-title" id="city-name">type a city city name to weather prediction </h4>
+        <h6 class="card-subtitle mb-2 text-muted" id="temperature"></h6>
+        <h6 class="card-subtitle mb-2 text-muted" id="humidity"></h6>
+        <h6 class="card-subtitle mb-2 text-muted" id="wind"></h6>
+        <h6 class="card-subtitle mb-2 text-muted" id="uv-index"></h6>
         </div>
       </div>
 
       <div class="row">
         <h3>5-Day Forecast</h3>
       </div>
-      <div class="bottom-card">
-      <div class="days-box">
+      <div class="bottom-card" id="bottom-card">
+      <!-- <div class="days-box">
         <div class="date">8/16/2020</div>
         <div class="temp">86:84f</div>
         <div class="humidity">33%</div>
@@ -70,7 +70,7 @@
         <div class="date">8/16/2020</div>
         <div class="temp">86:84f</div>
         <div class="humidity">33%</div>
-      </div>
+      </div> -->
     </div>
     </div>
   </div>
