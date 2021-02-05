@@ -34,7 +34,7 @@ $(document).ready(function () {
       var contry = '<div class="list-item">' + history[i] + '</div>';
       historyList.append(contry);
     }
-    var queryUrl = "http://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&cnt=5&appid=" + apiKey;
+    var queryUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&cnt=5&appid=" + apiKey;
     // var queryUrl = "http://api.openweathermap.org/data/2.5/forecast?q="+userInput+"&cnt=5&appid="+apiKey; 
     $.ajax(
       {
@@ -43,7 +43,7 @@ $(document).ready(function () {
         success: function (result) {
           console.log(result);
           var CityVal = result.city.name + " (" + result.list[0].dt_txt.split(' ')[0].split('-').join('/') + ")";
-          var icon = "<img src='http://openweathermap.org/img/wn/" + result.list[0].weather[0].icon + "@2x.png' alt='icon' >";
+          var icon = "<img src='https://openweathermap.org/img/wn/" + result.list[0].weather[0].icon + "@2x.png' alt='icon' >";
           cityName.html(CityVal + icon);
 
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             if (i < 5) {
               var parentDiv = '<div class="days-box">';
-              var icon2 = "<img src='http://openweathermap.org/img/wn/" + result.list[i].weather[0].icon + "@2x.png' alt='icon' >";
+              var icon2 = "<img src='https://openweathermap.org/img/wn/" + result.list[i].weather[0].icon + "@2x.png' alt='icon' >";
               parentDiv += '<div class="date">' + result.list[i].dt_txt.split(' ')[0].split('-').join('/') + '</div>' + icon2;
               parentDiv += '<div class="temp">Temp: ' + result.list[i].main.temp + ' &#8457; </div>';
               parentDiv += '<div class="humidity">Humidity: ' + result.list[i].main.humidity + ' % </div>';
